@@ -1,0 +1,96 @@
+{
+    "Database_name": "db5408",
+    "Tables": [
+        {
+            "Table_name": "league",
+            "Table_columns": [
+                {
+                    "Name": [
+                        "league_id",
+                        "league_name"
+                    ],
+                    "Data Type": [
+                        "int",
+                        "varchar(45)"
+                    ],
+                    "Nullable": [
+                        "No",
+                        "No"
+                    ],
+                    "Auto Increment": [
+                        "Yes",
+                        "No"
+                    ],
+                    "Primary Key": [
+                        "Yes",
+                        "No"
+                    ],
+                    "Foreign Key": [
+                        "No",
+                        "No"
+                    ],
+                    "Relationship": []
+                }
+            ]
+        },
+        {
+            "Table_name": "player",
+            "Table_columns": [
+                {
+                    "Name": [
+                        "player_id",
+                        "team_id",
+                        "league_id",
+                        "player_name",
+                        "position",
+                        "age"
+                    ],
+                    "Data Type": [
+                        "int",
+                        "int",
+                        "int",
+                        "varchar(45)",
+                        "varchar(45)",
+                        "int"
+                    ],
+                    "Nullable": [
+                        "No",
+                        "Yes",
+                        "No",
+                        "No",
+                        "No",
+                        "No"
+                    ],
+                    "Auto Increment": [
+                        "Yes",
+                        "No",
+                        "No",
+                        "No",
+                        "No",
+                        "No"
+                    ],
+                    "Primary Key": [
+                        "Yes",
+                        "No",
+                        "No",
+                        "No",
+                        "No",
+                        "No"
+                    ],
+                    "Foreign Key": [
+                        "No",
+                        "Yes",
+                        "Yes",
+                        "No",
+                        "No",
+                        "No"
+                    ],
+                    "Relationship": [
+                        "Foreign Key: team_id in Table:player References Primary Key: team_id in Table: team",
+                        "Foreign Key: league_id in Table:player References Primary Key: league_id in Table: league"
+                    ]
+                }
+            ]
+        }
+    ]
+}

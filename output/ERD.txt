@@ -1,0 +1,17 @@
+
+=========ER Diagram==========
+
+Relationships between Tables
+
+Table Name: League
++----------------+
+| Relationship   |
+|----------------|
++----------------+
+Table Name: Player
++----+-------------------------------------------------------------------------------------------+
+|    | Relationship                                                                              |
+|----+-------------------------------------------------------------------------------------------|
+|  0 | Foreign Key: team_id in Table:player References Primary Key: team_id in Table: team       |
+|  1 | Foreign Key: league_id in Table:player References Primary Key: league_id in Table: league |
++----+-------------------------------------------------------------------------------------------+

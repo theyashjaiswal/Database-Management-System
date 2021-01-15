@@ -1,0 +1,43 @@
+{
+    "Database_name": "db5408",
+    "Tables": [
+        {
+            "Table_name": "league",
+            "Table_columns": [
+                {
+                    "league_id": "1",
+                    "league_name": "Dalhousie league"
+                }
+            ]
+        },
+        {
+            "Table_name": "player",
+            "Table_columns": [
+                {
+                    "player_id": "1",
+                    "team_id": "1",
+                    "league_id": "1",
+                    "player_name": "abc",
+                    "position": "forward",
+                    "age": "22"
+                },
+                {
+                    "player_id": "3",
+                    "team_id": "2",
+                    "league_id": "1",
+                    "player_name": "Saurabh",
+                    "position": "Defense",
+                    "age": "27"
+                },
+                {
+                    "player_id": "4",
+                    "team_id": "2",
+                    "league_id": "1",
+                    "player_name": "Monil",
+                    "position": "Goalie",
+                    "age": "25"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+2020-12-02 05:53:36,619 INFO user Sam has created an account in the database
+2020-12-02 05:53:36,619 INFO user Sam has created an account in the database
+2020-12-02 05:53:36,622 INFO user Sam details are saved in the file
+2020-12-02 05:53:36,622 INFO user Sam details are saved in the file
+2020-12-02 05:54:20,556 INFO DB query given by user is create db5408
+2020-12-02 05:54:20,556 INFO DB query given by user is create db5408
+2020-12-02 05:55:01,365 INFO Query sent by the user sai, is CREATE TABLE League (league_id int NOT NULL AUTO_INCREMENT,league_name varchar(45) NOT NULL,PRIMARY KEY (league_id));
+2020-12-02 05:55:01,365 INFO Query sent by the user sai, is CREATE TABLE League (league_id int NOT NULL AUTO_INCREMENT,league_name varchar(45) NOT NULL,PRIMARY KEY (league_id));
+2020-12-02 05:55:10,166 INFO Query sent by the user sai, is show tables;
+2020-12-02 05:55:10,166 INFO Query sent by the user sai, is show tables;
+2020-12-02 05:55:27,252 INFO Query sent by the user sai, is CREATE TABLE Team (team_id int NOT NULL AUTO_INCREMENT,team_name int DEFAULT NULL,league_id int NOT NULL,PRIMARY KEY (team_id),FOREIGN KEY (league_id) REFERENCES League (league_id));
+2020-12-02 05:55:27,252 INFO Query sent by the user sai, is CREATE TABLE Team (team_id int NOT NULL AUTO_INCREMENT,team_name int DEFAULT NULL,league_id int NOT NULL,PRIMARY KEY (team_id),FOREIGN KEY (league_id) REFERENCES League (league_id));
+2020-12-02 05:55:37,694 INFO Query sent by the user sai, is select * from team;
+2020-12-02 05:55:37,694 INFO Query sent by the user sai, is select * from team;
+2020-12-02 05:55:37,694 INFO parsing select query, select * from team;
+2020-12-02 05:55:37,694 INFO parsing select query, select * from team;
+2020-12-02 05:55:37,695 INFO data fetched from the table  team
+2020-12-02 05:55:37,695 INFO data fetched from the table  team
+2020-12-02 05:56:18,960 INFO Query sent by the user sai, is CREATE TABLE Player (player_id int NOT NULL AUTO_INCREMENT,team_id int DEFAULT NULL,league_id int NOT NULL,player_name varchar(45) NOT NULL,position varchar(45) NOT NULL,age int NOT NULL,PRIMARY KEY (player_id),FOREIGN KEY (team_id) REFERENCES Team (team_id),FOREIGN KEY (league_id) REFERENCES League (league_id));
+2020-12-02 05:56:18,960 INFO Query sent by the user sai, is CREATE TABLE Player (player_id int NOT NULL AUTO_INCREMENT,team_id int DEFAULT NULL,league_id int NOT NULL,player_name varchar(45) NOT NULL,position varchar(45) NOT NULL,age int NOT NULL,PRIMARY KEY (player_id),FOREIGN KEY (team_id) REFERENCES Team (team_id),FOREIGN KEY (league_id) REFERENCES League (league_id));
+2020-12-02 05:56:28,800 INFO Query sent by the user sai, is INSERT INTO League (league_id,league_name) VALUES(1,’Dalhousie League’) ;
+2020-12-02 05:56:28,800 INFO Query sent by the user sai, is INSERT INTO League (league_id,league_name) VALUES(1,’Dalhousie League’) ;
+2020-12-02 05:56:47,225 INFO Query sent by the user sai, is select * from league;
+2020-12-02 05:56:47,225 INFO Query sent by the user sai, is select * from league;
+2020-12-02 05:56:47,225 INFO parsing select query, select * from league;
+2020-12-02 05:56:47,225 INFO parsing select query, select * from league;
+2020-12-02 05:56:47,225 INFO data fetched from the table  league
+2020-12-02 05:56:47,225 INFO data fetched from the table  league
+2020-12-02 05:57:11,169 INFO Query sent by the user sai, is INSERT INTO Team(team_id,team_name,league_id) VALUES(1,’Hogwarts’,1);
+2020-12-02 05:57:11,169 INFO Query sent by the user sai, is INSERT INTO Team(team_id,team_name,league_id) VALUES(1,’Hogwarts’,1);
+2020-12-02 05:57:19,482 INFO Query sent by the user sai, is select * from team;
+2020-12-02 05:57:19,482 INFO Query sent by the user sai, is select * from team;
+2020-12-02 05:57:19,485 INFO parsing select query, select * from team;
+2020-12-02 05:57:19,485 INFO parsing select query, select * from team;
+2020-12-02 05:57:19,485 INFO data fetched from the table  team
+2020-12-02 05:57:19,485 INFO data fetched from the table  team
+2020-12-02 05:57:27,829 INFO Query sent by the user sai, is INSERT INTO Team(team_id,team_name,league_id) VALUES(2,’Deccan’,1);
+2020-12-02 05:57:27,829 INFO Query sent by the user sai, is INSERT INTO Team(team_id,team_name,league_id) VALUES(2,’Deccan’,1);
+2020-12-02 05:57:36,210 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(1,1,1,’Robinder Dhillon','Goalie',22);
+2020-12-02 05:57:36,210 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(1,1,1,’Robinder Dhillon','Goalie',22);
+2020-12-02 05:57:52,315 INFO Query sent by the user sai, is select * from player
+2020-12-02 05:57:52,315 INFO Query sent by the user sai, is select * from player
+2020-12-02 05:57:52,316 INFO parsing select query, select * from player
+2020-12-02 05:57:52,316 INFO parsing select query, select * from player
+2020-12-02 05:57:52,316 INFO data fetched from the table  player
+2020-12-02 05:57:52,316 INFO data fetched from the table  player
+2020-12-02 05:58:04,722 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(2,1,1,’Rashmika’,’Forward’,24);
+2020-12-02 05:58:04,722 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(2,1,1,’Rashmika’,’Forward’,24);
+2020-12-02 05:58:38,268 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(3,2,1,’Saurabh’,’Defense,27);
+2020-12-02 05:58:38,268 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(3,2,1,’Saurabh’,’Defense,27);
+2020-12-02 05:58:51,428 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(4,2,1,’Monil','Goalie',25);
+2020-12-02 05:58:51,428 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(4,2,1,’Monil','Goalie',25);
+2020-12-02 05:58:57,818 INFO Query sent by the user sai, is select * from player;
+2020-12-02 05:58:57,818 INFO Query sent by the user sai, is select * from player;
+2020-12-02 05:58:57,818 INFO parsing select query, select * from player;
+2020-12-02 05:58:57,818 INFO parsing select query, select * from player;
+2020-12-02 05:58:57,819 INFO data fetched from the table  player
+2020-12-02 05:58:57,819 INFO data fetched from the table  player
+2020-12-02 05:59:25,952 INFO Query sent by the user sai, is select player_id from player where player_name='Monil';
+2020-12-02 05:59:25,952 INFO Query sent by the user sai, is select player_id from player where player_name='Monil';
+2020-12-02 05:59:25,953 INFO parsing select query, select player_id from player where player_name='monil';
+2020-12-02 05:59:25,953 INFO parsing select query, select player_id from player where player_name='monil';
+2020-12-02 05:59:25,958 INFO data fetched from the table player
+2020-12-02 05:59:25,958 INFO data fetched from the table player
+2020-12-02 05:59:43,446 INFO Query sent by the user sai, is select player_name from player where team_id=1;
+2020-12-02 05:59:43,446 INFO Query sent by the user sai, is select player_name from player where team_id=1;
+2020-12-02 05:59:43,446 INFO parsing select query, select player_name from player where team_id=1;
+2020-12-02 05:59:43,446 INFO parsing select query, select player_name from player where team_id=1;
+2020-12-02 05:59:43,446 INFO data fetched from the table player
+2020-12-02 05:59:43,446 INFO data fetched from the table player
+2020-12-02 06:00:22,447 INFO Query sent by the user sai, is UPDATE Player SET position = ‘Goalie’ WHERE age = 24;
+2020-12-02 06:00:22,447 INFO Query sent by the user sai, is UPDATE Player SET position = ‘Goalie’ WHERE age = 24;
+2020-12-02 06:00:29,792 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:00:29,792 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:00:29,793 INFO parsing select query, select * from player;
+2020-12-02 06:00:29,793 INFO parsing select query, select * from player;
+2020-12-02 06:00:29,794 INFO data fetched from the table  player
+2020-12-02 06:00:29,794 INFO data fetched from the table  player
+2020-12-02 06:00:55,001 INFO Query sent by the user sai, is UPDATE Player SET player_name = 'ABC', position = 'forward' WHERE team_id = '1';
+2020-12-02 06:00:55,001 INFO Query sent by the user sai, is UPDATE Player SET player_name = 'ABC', position = 'forward' WHERE team_id = '1';
+2020-12-02 06:01:03,584 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:01:03,584 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:01:03,585 INFO parsing select query, select * from player;
+2020-12-02 06:01:03,585 INFO parsing select query, select * from player;
+2020-12-02 06:01:03,585 INFO data fetched from the table  player
+2020-12-02 06:01:03,585 INFO data fetched from the table  player
+2020-12-02 06:01:18,717 INFO Query sent by the user sai, is show tables;
+2020-12-02 06:01:18,717 INFO Query sent by the user sai, is show tables;
+2020-12-02 06:01:40,240 INFO Query sent by the user sai, is Truncate Table Team;
+2020-12-02 06:01:40,240 INFO Query sent by the user sai, is Truncate Table Team;
+2020-12-02 06:01:48,945 INFO Query sent by the user sai, is select * from team;
+2020-12-02 06:01:48,945 INFO Query sent by the user sai, is select * from team;
+2020-12-02 06:01:48,946 INFO parsing select query, select * from team;
+2020-12-02 06:01:48,946 INFO parsing select query, select * from team;
+2020-12-02 06:01:48,946 INFO data fetched from the table  team
+2020-12-02 06:01:48,946 INFO data fetched from the table  team
+2020-12-02 06:02:08,314 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:02:08,314 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:02:08,314 INFO parsing select query, select * from player;
+2020-12-02 06:02:08,314 INFO parsing select query, select * from player;
+2020-12-02 06:02:08,315 INFO data fetched from the table  player
+2020-12-02 06:02:08,315 INFO data fetched from the table  player
+2020-12-02 06:02:17,787 INFO Query sent by the user sai, is Delete from Player where player_id=2;
+2020-12-02 06:02:17,787 INFO Query sent by the user sai, is Delete from Player where player_id=2;
+2020-12-02 06:02:17,788 INFO parsing delete query, delete from player where player_id=2;
+2020-12-02 06:02:17,788 INFO parsing delete query, delete from player where player_id=2;
+2020-12-02 06:02:17,788 INFO data is deleted from the table player
+2020-12-02 06:02:17,788 INFO data is deleted from the table player
+2020-12-02 06:02:24,778 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:02:24,778 INFO Query sent by the user sai, is select * from player;
+2020-12-02 06:02:24,779 INFO parsing select query, select * from player;
+2020-12-02 06:02:24,779 INFO parsing select query, select * from player;
+2020-12-02 06:02:24,779 INFO data fetched from the table  player
+2020-12-02 06:02:24,779 INFO data fetched from the table  player
+2020-12-02 06:03:09,700 INFO DB query given by user is show databases;
+2020-12-02 06:03:24,269 INFO Query sent by the user yash, is select * from player;
+2020-12-02 06:03:24,270 INFO parsing select query, select * from player;
+2020-12-02 06:03:24,271 INFO data fetched from the table  player
+2020-12-02 06:04:42,509 INFO Query sent by the user yash, is UPDATE Player SET player_name = 'ABC', position = 'forward' WHERE team_id = '1';
+2020-12-02 06:04:42,510 ERROR Error in your update query!!! Please check syntax!!
+2020-12-02 06:05:02,200 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(2,1,1,’Rashmika’,’Forward’,24);
+2020-12-02 06:05:02,200 INFO Query sent by the user sai, is INSERT INTO Player(player_id,team_id,league_id,player_name,position,age) VALUES(2,1,1,’Rashmika’,’Forward’,24);
+2020-12-02 06:05:02,201 INFO Query sent by the user sai, is UPDATE Player SET player_name = 'ABC', position = 'forward' WHERE team_id = '1';
+2020-12-02 06:05:02,201 INFO Query sent by the user sai, is UPDATE Player SET player_name = 'ABC', position = 'forward' WHERE team_id = '1';
+2020-12-02 06:05:12,584 INFO Query sent by the user sai, is show tables;
+2020-12-02 06:05:12,584 INFO Query sent by the user sai, is show tables;
+2020-12-02 06:05:28,585 INFO Query sent by the user sai, is Drop table Team;
+2020-12-02 06:05:28,585 INFO Query sent by the user sai, is Drop table Team;
+2020-12-02 06:05:28,585 INFO parsing drop query, drop table team;
+2020-12-02 06:05:28,585 INFO parsing drop query, drop table team;
+2020-12-02 06:05:37,665 INFO Query sent by the user sai, is show tables;
+2020-12-02 06:05:37,665 INFO Query sent by the user sai, is show tables;
+2020-12-02 06:06:34,714 INFO Query sent by the user sai, is export data dictionary;
+2020-12-02 06:06:34,714 INFO Query sent by the user sai, is export data dictionary;
+2020-12-02 06:06:34,727 INFO Data Dictionary exported. Check your output folder.
+2020-12-02 06:06:34,727 INFO Data Dictionary exported. Check your output folder.
+2020-12-02 06:08:02,494 INFO Query sent by the user sai, is export sql dump;
+2020-12-02 06:08:02,494 INFO Query sent by the user sai, is export sql dump;
+2020-12-02 06:08:02,495 INFO SQL Dump exported. Check your output folder.
+2020-12-02 06:08:02,495 INFO SQL Dump exported. Check your output folder.
+2020-12-02 06:08:49,599 INFO Query sent by the user sai, is export erd;
+2020-12-02 06:08:49,599 INFO Query sent by the user sai, is export erd;
+2020-12-02 06:08:49,608 INFO ERD exported. Check your output folder.
+2020-12-02 06:08:49,608 INFO ERD exported. Check your output folder.
+2020-12-08 11:09:35,981 INFO Admin has granted  permissions for the user, Sam
+2020-12-08 11:12:25,380 ERROR Invalid userame or password
+2020-12-08 11:13:00,482 INFO Admin has granted insert permissions for the user, Sam
+2020-12-08 19:25:59,871 INFO DB query given by user is use db5408
+2020-12-08 19:26:06,981 INFO Query sent by the user sai, is select * from player;
+2020-12-08 19:26:06,982 INFO parsing select query, select * from player;
+2020-12-08 19:26:06,983 INFO data fetched from the table  player
+2020-12-08 19:26:26,013 INFO Query sent by the user sai, is select * from player where player_name=saurabh
+2020-12-08 19:26:26,014 INFO parsing select query, select * from player where player_name=saurabh
+2020-12-08 19:26:26,015 INFO data fetched from the table player
+2020-12-08 19:26:49,518 INFO Query sent by the user sai, is select * from player where player_name = Saurabh
+2020-12-08 19:26:49,519 INFO parsing select query, select * from player where player_name = saurabh
+2020-12-08 19:26:49,519 INFO data fetched from the table player
+2020-12-08 19:28:25,208 INFO DB query given by user is use db5408
+2020-12-08 19:29:00,969 INFO Query sent by the user sai, is select * from player where player_name=Saurabh
+2020-12-08 19:29:00,970 INFO parsing select query, select * from player where player_name=saurabh
+2020-12-08 19:29:00,974 INFO data fetched from the table player
+2020-12-08 19:30:19,542 INFO DB query given by user is use db5408;
+2020-12-08 19:31:02,430 INFO Query sent by the user sai, is select * from player where player_name=saurabh
+2020-12-08 19:31:05,063 INFO parsing select query, select * from player where player_name=saurabh
+2020-12-08 19:31:05,070 INFO data fetched from the table player
+2020-12-08 19:31:29,111 INFO Query sent by the user sai, is select * from player where player_name=saurabh
+2020-12-08 19:31:39,154 INFO parsing select query, select * from player where player_name=saurabh
+2020-12-08 19:32:15,852 INFO data fetched from the table player
+2020-12-08 19:32:47,721 INFO Query sent by the user sai, is select * from player where player_name=saurabh
+2020-12-08 19:32:52,903 INFO parsing select query, select * from player where player_name=saurabh
+2020-12-08 19:39:02,027 INFO DB query given by user is use db5408;
+2020-12-08 19:40:01,733 INFO Query sent by the user sai, is select * from player where player_name=saurabh
+2020-12-08 19:40:04,629 INFO parsing select query, select * from player where player_name=saurabh
+2020-12-08 19:40:10,189 ERROR Error in your Select query!!! Please check syntax!!
+2020-12-08 19:40:29,774 INFO Query sent by the user sai, is select * from player where player_name = saurabh
+2020-12-08 19:40:32,283 INFO parsing select query, select * from player where player_name = saurabh
+2020-12-08 19:40:34,760 ERROR Error in your Select query!!! Please check syntax!!
+2020-12-08 19:41:33,009 INFO DB query given by user is use db5408;
+2020-12-08 19:41:44,954 INFO Query sent by the user sai, is select * from player where player_name = saurabh
+2020-12-08 19:41:47,639 INFO parsing select query, select * from player where player_name = saurabh
+2020-12-08 19:42:01,410 INFO data fetched from the table player
+2020-12-08 19:42:24,281 INFO Query sent by the user sai, is select * from player where player_name = 'saurabh';
+2020-12-08 19:42:27,890 INFO parsing select query, select * from player where player_name = 'saurabh';
+2020-12-08 19:47:45,779 INFO DB query given by user is use db5408
+2020-12-08 19:48:16,980 INFO Query sent by the user sai, is select * from player where player_name= 'Saurabh'
+2020-12-08 19:48:16,980 INFO parsing select query, select * from player where player_name= 'saurabh'
+2020-12-08 19:48:16,981 INFO data fetched from the table player
+2020-12-08 20:55:29,949 INFO DB query given by user is use db5408;
+2020-12-08 20:55:38,557 INFO Query sent by the user sai, is select * from player;
+2020-12-08 20:55:38,557 INFO parsing select query, select * from player;
+2020-12-08 20:55:38,559 INFO data fetched from the table  player
